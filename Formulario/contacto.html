@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    
+<meta charset="UTF-8">
+    <form action="contacto.html" method="get"> 
+        <div class="elem-group"> 
+            <label for="nombre">Nombre</label> 
+            <input type="text" id="nombre" name="Nombre_usuario" placeholder="Nombre Completo" pattern=[A-Z\sa-z]{3,20} required> 
+        </div> 
+        <div class="elem-group"> 
+            <label for="email">Correo electronico</label> 
+            <input type="email" id="email" name="email_usuario" placeholder="usuario@email.com" required> 
+        </div> 
+        <div class="elem-group"> 
+            <label for="Raza">Raza de perro</label> 
+                <select id="Raza" name="Raza_perro" required> 
+                    <option value="">Eliga raza</option>
+                    <option value="Galgo">Galgo</option> 
+                    <option value="Samoyedo">Samoyedo</option> 
+                    <option value="Setter">Setter</option> 
+                    <option value="Dogo">Dogo</option> 
+                </select> 
+        </div> 
+        <div class="elem-group"> 
+                <label for="titulo">Motivo de contacto</label> 
+                <input type="text" id="titulo" name="titulo_email" required placeholder="motivo de contacto" pattern=[A-Za-z0-9\s]{8,60}> 
+        </div> 
+        <div class="elem-group"> 
+            <label for="Mensaje">Solicitud</label> 
+                <textarea id="Mensaje" name="Mensaje" placeholder="Escribe tu mensaje aquí." required></textarea>
+        </div> 
+                <button type="submit">Enviar mensaje</button>
+                <button type="reset">resetear formulario</button>
+    </form>
